@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <!-- Font awesome 5 -->
+    <!-- <link href="fonts/fontawesome/css/fontawesome-all.min.css" type="text/css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom style -->
+    <link href="css/ui.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" type="text/css" href="css/Getall.css"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+    <title>ReFab Home</title>
+</head>
+<body>
+
+    <!---------------- navbar -------------->
+
+<section class="header-main shadow-sm" style="background-color: #35424A" >
+    <div class="container" >
+        <div class="row-sm align-items-center">
+            <div class="col-lg-4-24 col-sm-3">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="font-family:verdana;font-size: 21px; color:white">ReFab </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-11-24 col-sm-8">
+                <form action="#" class="py-1">
+                    <div class="input-group w-100">
+                        <select class="custom-select" name="category_name">
+                            <option value="">All type</option>
+                            <option value="">Special</option>
+                            <option value="">Only best</option>
+                            <option value="">Latest</option>
+                        </select>
+                        <input type="text" class="form-control" style="width:50%;" placeholder="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit">
+                                <i class="fa fa-search"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                </form> <!-- search-wrap .end// -->
+            </div> <!-- col.// -->
+            
+            <div class="col-lg-9-24 col-sm-12">
+                <div class="widgets-wrap float-right row no-gutters py-1">
+                    <div class="col-auto">
+                         <div class="widget-header dropdown">
+                            <a href="#" data-toggle="dropdown" data-offset="20,10">
+                                <div class="icontext">
+                                    <div class="icon-wrap"><i class="text-light icon-sm fa fa-user"></i></div>
+                                    <div class="text-wrap text-light">
+                                        Sign In <br>
+                                        
+                                    </div> 
+                                </div>
+                            </a>
+                            
+                        </div> <!-- widget-header .// -->
+                    </div> <!-- col.// -->
+                    <div class="col-lg-auto">
+                        <a href="#" class="widget-header">
+                            <div class="icontext">
+                                <div class="icon-wrap"><i class="text-light icon-sm fa fa-shopping-cart"></i></div>
+                                <div class="text-wrap text-light">
+                                    Cart <br> 
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- col.// -->
+                    <div class="col-lg-1-24">
+                        <a href="#" class="widget-header">
+                            <div class="icontext">
+                                <div class="icon-wrap"><i class="text-light icon-sm  fa fa-heart"></i></div>
+                                <div class="text-wrap text-light">
+                                    <span class="small round badge badge-secondary">0</span>
+                                    <div>Wishlist</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- col.// -->
+                </div> <!-- widgets-wrap.// row.// -->
+            </div> <!-- col.// -->
+        </div> <!-- row.// -->
+    </div> <!-- container.// -->
+</section> <!-- header-main .// -->
+</header> <!-- section-header.// -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+            aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="dropdown07" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: white"><strong>All category</strong></a> 
+                    <div class="dropdown-menu" aria-labelledby="dropdown07">
+                        <a class="dropdown-item" href="#">Furniture</a>
+                        <a class="dropdown-item" href="#">Antique</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <a class="dropdown-item" href="#">Category </a>
+                        <a class="dropdown-item" href="#">Category </a>
+                        <a class="dropdown-item" href="#">Category </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="color: white" >Fashion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="color: white">Supermarket</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="color: white">Electronics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white">Baby &amp Toys</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white">Fitness sport</a>
+                </li>
+                
+            </ul>
+        </div> <!-- collapse .// -->
+    </div> <!-- container .// -->
+</nav>
+</div>
+<script type ="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+                { $Duration: 800, $Opacity: 2 }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 2000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+</script>
+<div id="jssor_1"
+    style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+    <!-- Loading Screen -->
+    <div data-u="loading" class="jssorl-009-spin"
+        style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+    </div>
+    <div data-u="slides"
+        style="cursor:default;position:relative;top:0px;left:0px;width:2000px;height:380px;overflow:hidden;">
+        <div>
+            <img data-u="image" src="img/001.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/002.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/003.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/004.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/005.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/006.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/007.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/008.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/009.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/010.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/011.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="img/012.jpg" />
+        </div>
+    </div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1"
+        data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+            </svg>
+        </div>
+    </div>
+    <!-- Arrow Navigator -->
+    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2"
+        data-scale="0.75" data-scale-left="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+        </svg>
+    </div>
+    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2"
+        data-scale="0.75" data-scale-right="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+        </svg>
+    </div>
+</div>
+<!-- #endregion Jssor Slider End -->
+
+
+ 
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <figure class="card card-product">
+            <div class="img-wrap"><img src="images/items/1.jpg"></div>
+            <figcaption class="info-wrap">
+                <h4 class="title">Another name of item</h4>
+                <p class="desc">Some small description goes here</p>
+                <div class="rating-wrap">
+                    <ul class="rating-stars">
+                        <li style="width:80%" class="stars-active">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </li>
+                    </ul>
+                    <div class="label-rating">132 reviews</div>
+                    <div class="label-rating">154 orders </div>
+                </div> <!-- rating-wrap.// -->
+            </figcaption>
+            <div class="bottom-wrap">
+                <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+                <div class="price-wrap h5">
+                    <span class="price-new">̥</span> <del class="price-old">$1980</del>
+                </div> <!-- price-wrap.// -->
+            </div> <!-- bottom-wrap.// -->
+        </figure>
+    </div> <!-- col // -->
+    <div class="col-md-4">
+        <figure class="card card-product">
+            <div class="img-wrap"><img src="images/items/2.jpg"> </div>
+            <figcaption class="info-wrap">
+                <h4 class="title">Good product</h4>
+                <p class="desc">Some small description goes here</p>
+                <div class="rating-wrap">
+                    <ul class="rating-stars">
+                        <li style="width:80%" class="stars-active">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </li>
+                    </ul>
+                    <div class="label-rating">132 reviews</div>
+                    <div class="label-rating">154 orders </div>
+                </div> <!-- rating-wrap.// -->
+            </figcaption>
+            <div class="bottom-wrap">
+                <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+                <div class="price-wrap h5">
+                    <span class="price-new">$1280</span> <del class="price-old">$1980</del>
+                </div> <!-- price-wrap.// -->
+            </div> <!-- bottom-wrap.// -->
+        </figure>
+    </div> <!-- col // -->
+    <div class="col-md-4">
+        <figure class="card card-product">
+            <div class="img-wrap"><img src="images/items/3.jpg"></div>
+            <figcaption class="info-wrap">
+                <h4 class="title">Product name goes here</h4>
+                <p class="desc">Some small description goes here</p>
+                <div class="rating-wrap">
+                    <ul class="rating-stars">
+                        <li style="width:80%" class="stars-active">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </li>
+                    </ul>
+                    <div class="label-rating">132 reviews</div>
+                    <div class="label-rating">154 orders </div>
+                </div> <!-- rating-wrap.// -->
+            </figcaption>
+            <div class="bottom-wrap">
+                <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+                <div class="price-wrap h5">
+                    <span class="price-new">$1280</span> <del class="price-old">$1980</del>
+                </div> <!-- price-wrap.// -->
+            </div> <!-- bottom-wrap.// -->
+        </figure>
+    </div> <!-- col // -->
+</div> <!-- row.// -->
+<hr>
+
+    
+    <!-- col.// -->
+<div class="row">
+    <aside class="col-md-4">
+<div class="card-banner" style="height:250px; background-image: url('images/posts/2.jpg'); ">
+    <article class="overlay bottom text-center">
+        <h5 class="card-title">Some text for title</h5>
+        <a href="#" class="btn btn-warning btn-sm"> View more </a>
+    </article>
+</div> <!-- card.// -->
+</aside>
+<!-- col.// -->
+<aside class="col-md-4">
+
+<div class="card-banner" style="height:250px; background-image: url('images/posts/2.jpg');">
+    <article class="overlay bottom text-center">
+        <h5 class="card-title">Some text for title</h5>
+        <a href="#" class="btn btn-warning btn-sm"> View more </a>
+    </article>
+</div>
+ <!-- card.// -->
+</aside>
+<!-- col.// -->
+<aside class="col-md-4">
+<div class="card-banner" style="height:250px; background-image: url('images/posts/2.jpg');">
+    <article class="overlay bottom text-center">
+        <h5 class="card-title">Some text for title</h5>
+        <a href="#" class="btn btn-warning btn-sm"> View more </a>
+    </article>
+</div>
+</aside>
+</div>
+<hr>
+
+
+<!-------------- footer --------------------->
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Get to Know Us</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Products we sell</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Product List</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Mobile and tablets</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Furnitures</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Laptop</a></li>
+                       <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Clothings</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Make Money with Us</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Sell on ReFab</a></li>
+                       
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>                       
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p> Developed & Design by: Group 11</p>
+                    <p class="h6">&copy All right Reversed.<a class="text-green ml-2" 
+                            target="_blank">ReFab</a></p>
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
